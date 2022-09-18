@@ -3,9 +3,12 @@ git checkout -b gh-pages
 
 npm run build
 
-git add -f dist
-git commit -m "Deploy to GitHub Pages"
-git push -f origin gh-pages
+rm -rf ./
+cp -r dist/* ./
+rm -rf dist
+
+git add .
+git commit -m "Deploy"
+git push origin gh-pages --force
 
 git checkout -
-
