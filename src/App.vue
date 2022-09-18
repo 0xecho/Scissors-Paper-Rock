@@ -14,7 +14,7 @@
     </v-app-bar>
 
     <v-main>
-      <router-view />
+      <home-view />
     </v-main>
     <v-footer app dark color="primary">
       <v-row justify="center" align="center" style="height: 50px">
@@ -34,7 +34,9 @@
 </template>
 
 <script>
+import HomeView from "./views/HomeView.vue";
 export default {
+  components: { HomeView },
   name: "App",
 
   data: () => ({
