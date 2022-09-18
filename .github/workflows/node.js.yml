@@ -27,4 +27,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: bash deploy.sh
+    - run: npm i && bash deploy.sh
