@@ -23,12 +23,12 @@ A simple game of scissors paper rock with a collection of AI algorithms to play 
 ```
 
 | Parameter | Type   | Description |
-| :-------- | :----- | :---------- |
+| --------- | ------ | ----------- |
 | `none`    | `none` |             |
 
 | Return Value | Type     | Description |
-| :----------- | :------- | :---------- | ------- | -------------------------------------- |
-| move         | `string` | `'rock'     | 'paper' | 'scissor'`(scissor has no trailing`s`) |
+| ------------ | -------- | ----------- | 
+| move         | `string` | `'rock','paper','scissor' `(scissor has no trailing`s`) |
 
 This method should return the move that the AI wants to play.
 
@@ -43,11 +43,11 @@ This method should return the move that the AI wants to play.
 ```
 
 | Parameter     | Type     | Description |
-| :------------ | :------- | :---------- | ------- | ------------------------------------------- |
-| `move`        | `object` |             |
-| `move.player` | `string` | `'rock'     | 'paper' | 'scissor'` The move that the player played. |
-| `move.AI`     | `string` | `'rock'     | 'paper' | 'scissor'` The move that the AI played.     |
-| `move.result` | `string` | `'win'      | 'lose'  | 'draw'` The result of the game.             |
+| ------------- | -------- | ----------- |
+| `move`        | `object` |             
+| `move.player` | `string` | `'rock','paper','scissor'` The move that the player played. |
+| `move.AI`     | `string` | `'rock','paper','scissor'` The move that the AI played.     |
+| `move.result` | `string` | `'win','lose','draw'` The result of the game.             |
 
 This method will be called after every game. It will pass the move that the player played, the move that the AI played and the result of the game.
 
